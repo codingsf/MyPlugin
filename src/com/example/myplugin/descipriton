@@ -1,0 +1,8 @@
+需要解决的问题：
+1、ContentProvider与其他组件一起加载。
+2、插件进程与主进程的切换。
+3、资源加载问题。
+4、address areadly in use 启动Activity时，mHandler.Callback问题。
+
+已解决的问题：
+启动Activity后，其他组件不能启动的问题：启动Acivity,全局sContext,所以在Application中，分清是hostContext,还是插件context.
